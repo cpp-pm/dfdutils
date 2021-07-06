@@ -85,7 +85,7 @@ target_include_directories(dfdutils PUBLIC
     $<BUILD_INTERFACE:${GENERATED_DIR}>)
 target_include_directories(dfdutils PUBLIC
     $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}>
-    $<INSTALL_INTERFACE:${CMAKE_INSTALL_INCLUDEDIR}/KhronosGroup>)
+    $<INSTALL_INTERFACE:${CMAKE_INSTALL_INCLUDEDIR}/KHR>)
 add_dependencies(dfdutils mkvk)
 if(BUILD_FOR_LIBKTX)
     target_compile_definitions(dfdutils PUBLIC LIBKTX)
